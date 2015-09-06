@@ -1,0 +1,14 @@
+This python (3) script commits exported scrobbles (tsv) from last.fm to a git
+repository.
+
+You need the exported json/tsv zip from the settings/dataexporter tool (which
+seems to have been removed from the last version of last.fm?)
+
+Usage:
+
+    $ unzip lastfm-export.zip
+    $ mkdir output
+    $ cd output
+    $ git init
+    $ cd ..
+    $ python lastfm-git.py output data
